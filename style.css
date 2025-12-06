@@ -82,6 +82,12 @@ body {
   font-size: 22px;
   cursor: pointer;
 }
+.hamburger img {
+    width: 30px;   /* width set karo */
+    height: 30px;  /* height set karo */
+    object-fit: contain;  /* image stretch na ho */
+}
+
 
 @media (max-width: 900px) {
   .nav-list { display: none; }
