@@ -10,7 +10,19 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <nav class="top-nav" aria-label="Main nav">
+
+      <!-- Logo + Navigation -->
+      <nav class="top-nav" aria-label="Main navigation">
+
+        <!-- Hidden checkbox for CSS toggle -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+        <!-- Hamburger Icon -->
+        <label for="nav-toggle" class="hamburger">
+          <img src="menu-bar.png" alt="Menu">
+        </label>
+
+        <!-- Desktop & Mobile Menu -->
         <ul class="nav-list" id="nav-list">
           <li>Home</li>
           <li>Order</li>
@@ -19,8 +31,8 @@
           <li>Testimonials</li>
           <li>Contact Us</li>
         </ul>
-        <button class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">☰</button>
       </nav>
+
     </div>
   </header>
 
@@ -32,30 +44,17 @@
           <h1>LOREM IPSUM</h1>
           <p class="lead">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id est vitae dolor rhoncus
-            tristique. Maecenas metus quam, rhoncus euismod lorem in, sollicitudin viverra eros. Donec dictum
-            luctus quam ut tristique. Curabitur nec faucibus purus. Quisque congue sem nec justo mollis, in
-            tincidunt erat pretium. Sed pulvinar, massa ac porta viverra.
+            tristique. Maecenas metus quam, rhoncus euismod lorem in, sollicitudin viverra eros.
           </p>
           <a class="btn cta" href="#order">Click Me</a>
         </div>
 
-        <div class="hero-right" aria-hidden="false">
-          <img src="pexels-robin-stickel-70497.jpg"
-               alt="delicious food"/>
+        <div class="hero-right">
+          <img src="pexels-robin-stickel-70497.jpg" alt="Food Image">
         </div>
       </div>
     </section>
   </main>
-
-  <script>
-    const hb = document.getElementById('hamburger');
-    const nav = document.getElementById('nav-list');
-    hb.addEventListener('click', () => {
-      const open = nav.classList.toggle('open');
-      hb.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 
 </body>
 </html>
