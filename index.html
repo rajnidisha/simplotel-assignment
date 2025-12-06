@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Frontend Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="top-nav" aria-label="Main nav">
+        <ul class="nav-list" id="nav-list">
+          <li>Home</li>
+          <li>Order</li>
+          <li>Food</li>
+          <li>Restaurant</li>
+          <li>Testimonials</li>
+          <li>Contact Us</li>
+        </ul>
+
+        <button class="hamburger" id="hamburger" aria-label="menu" aria-expanded="false">☰</button>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner container">
+        <div class="hero-left">
+          <h1>LOREM IPSUM</h1>
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id est vitae dolor rhoncus
+            tristique. Maecenas metus quam, rhoncus euismod lorem in, sollicitudin viverra eros. Donec dictum
+            luctus quam ut tristique. Curabitur nec faucibus purus. Quisque congue sem nec justo mollis, in
+            tincidunt erat pretium. Sed pulvinar, massa ac porta viverra.
+          </p>
+          <a class="btn cta" href="#order">Click Me</a>
+        </div>
+
+        <div class="hero-right" aria-hidden="false">
+          <img src="images/pexels-robin-stickel-70497.jpg"
+               alt="delicious food"/>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const hb = document.getElementById('hamburger');
+    const nav = document.getElementById('nav-list');
+    hb.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      hb.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
