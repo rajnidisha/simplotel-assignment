@@ -71,16 +71,7 @@ body {
   white-space: nowrap;
   user-select: none;
 }
-.hamburger {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: 0;
-  font-size: 22px;
-  cursor: pointer;
-}
+
 
 .hamburger {
     width: 30px;   /* width set karo */
